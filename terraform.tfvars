@@ -8,9 +8,10 @@ instances = {
     tag  = "public-subnet-1a"
     name = "terraform"
   }
-#   inst2 = {
-#     az   = "us-east-1b"
-#     tag  = "public-subnet-1b"
-#     name = "web-1b"
-#   }
+jenkins = {
+    az            = "ap-south-1a"
+    tag           = "jenkins-server"
+    name          = "jenkins"
+    instance_type = "t3.small"
+  }
 }
