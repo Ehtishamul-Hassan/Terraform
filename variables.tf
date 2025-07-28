@@ -23,7 +23,7 @@ variable "instances" {
     az            = string
     tag           = string
     name          = string
-    instance_type = string    # 👈 Add this line
+    instance_type = string    
   }))
   description = "Instances to launch with different instance types"
 }
