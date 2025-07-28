@@ -20,9 +20,10 @@ variable "instance_type" {
 # 👇 New complex variable to launch multiple instances
 variable "instances" {
   type = map(object({
-    az     = string
-    tag    = string  
-    name   = string
+    az            = string
+    tag           = string
+    name          = string
+    instance_type = string    # 👈 Add this line
   }))
-  description = "Instances to launch with subnet info and names"
+  description = "Instances to launch with different instance types"
 }
